@@ -1,0 +1,344 @@
+
+:root{
+    --bgLeft : rgba(6, 6, 15, 1) ;
+    --bgCenter:rgba(33, 38, 74, 1) ;
+    --bgRight : rgba(0, 21, 41, 1) ;
+    --theme: #001529;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body ,.bg{
+        /* ff 3.6+ */
+        background:-moz-radial-gradient(circle at 48% 25%, var(--bgLeft) 0%, var(--bgCenter) 0%, var(--bgRight) 100%);
+    
+        /* safari 5.1+,chrome 10+ */
+        background:-webkit-radial-gradient(circle at 48% 25%, var(--bgLeft) 0%, var(--bgCenter) 0%, var(--bgRight) 100%);
+    
+        /* opera 11.10+ */
+        background:-o-radial-gradient(circle at 48% 25%, var(--bgLeft) 0%, var(--bgCenter) 0%, var(--bgRight) 100%);
+    
+        /* ie 10+ */
+        background:-ms-radial-gradient(circle at 48% 25%, var(--bgLeft) 0%, var(--bgCenter) 0%, var(--bgRight) 100%);
+    
+        /* global 92%+ browsers support */
+        background:radial-gradient(circle at 48% 25%, var(--bgLeft) 0%, var(--bgCenter) 0%, var(--bgRight) 100%);
+    color: white;
+    }
+.navbar{
+    width: 100%;
+    background : var(--theme);
+height: fit-content;
+
+}
+.nav-container{
+padding: 12px;
+}
+.nav-container,.flex{
+display: flex;
+background-color : var(--theme);
+height: fit-content;
+    margin-block: auto;
+}
+.flex{
+    margin-block: auto;
+    width: 80%;
+    gap: 10%;
+
+}
+
+.logo-container{
+    margin-right: auto;
+    margin-top: auto;
+}
+.bg{
+  min-height: 280px;
+  padding: 24px;
+}
+.crypto-image{
+    width:30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
+}
+.crypto-header{
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size:20px;
+    font-weight : 700;
+    text-align : center;
+    }
+    .crypto-text{
+        color: white;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .crypto-text-header{
+        font-size:18px;
+    }
+    @media screen and (max-width:760px) {
+        .crypto-text-header{
+            font-size: 16px;
+        }
+        .crypto-text{
+            font-size: 14px;
+        }
+        crypto-header{
+            font-size: 16px;
+        }
+    }
+    .row:hover{
+        background-color: rgb(33, 38, 74,0.5) !important;
+    }
+    .coin-heading-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-bottom: 1px solid var(--border);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        gap: 10px;
+    }
+    
+    .coin-heading-container .coin-name{
+        font-weight: 900;
+        color: var(--pink);
+    }
+    
+    .coin-heading-container p{
+        font-size: 1rem;
+        opacity: 0.9;
+        margin-bottom: 20px;
+    }
+    
+    .stats-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .stats-container h2{
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
+    
+    .coin-details-heading{
+        font-weight: 700 !important;
+        margin-top: 20px !important;
+        font-size: 20px !important;
+        color: white !important;
+    }
+    
+    .coin-stats{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--border);
+        font-size: 1rem;
+        opacity: 0.9;
+        padding: 20px;
+    
+    }
+    
+    .coin-stats-name{
+        display: flex;
+        gap: 10px;
+        font-size: 1rem;
+    }
+    
+    .stats{
+        font-weight: 800;
+    }
+    
+    .coin-value-statistics-heading p{
+        font-size: 1rem;
+        opacity: 0.9;
+    }
+    
+    .coin-desc-link{
+        display: flex;
+        gap: 40px;
+        margin-top: 40px;
+        padding-top: 20px;
+    }
+    
+    .coin-desc-link h2{
+        font-weight: 700;
+        color: var(--pink);
+    }
+    
+    .coin-desc-link p{
+        font-size: 1rem;
+        opacity: 0.9;
+    }
+    
+    .coin-desc-link a{
+        color: var(--pink);
+    }
+    
+    .coin-desc-link h3{
+        font-weight: 700;
+    }
+    
+    .coin-desc{
+        flex: 0.5;
+    }
+    
+    .coin-links{
+      padding: 0px 20px;
+        flex: 0.5;
+    }
+    
+    .coin-link{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--border);
+        padding: 20px;
+    }
+    
+    .link-name{
+        text-transform: capitalize;
+        font-size: 1rem;
+        color: white !important;
+    }
+    
+    .coin-link a{
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    
+    .coin-link:hover, .coin-stats:hover{
+        background-color: var(--bgSecondary);
+    }
+    
+    @media screen and (max-width:1000px){
+        .stats-container{
+            flex-direction: column;
+        }
+        .coin-desc-link{
+            flex-direction: column;
+        }
+        .stats-container h2{
+            margin-top: 0px;
+        }
+    }
+    
+    @media screen and (max-width: 500px){
+        .coin-links{
+            padding: 0px;
+        }
+     
+    }
+    @media screen and (max-width: 500px){
+        .heading{
+            margin-top: 20px;
+        }
+    }
+    
+    .select-news{
+        width: 180px;
+    }
+    .news-card{
+        min-height: 300px !important;
+    }
+    .news-image-container{
+        display: flex !important;
+        justify-content: space-between !important;
+    }
+    .news-title{
+    width: 70%;
+    }
+    
+    .news-image-container .img{
+        width:100px;
+        height:100px;
+    }
+    .news-card p{
+        color: black;
+        margin: 10px 0px !important;
+    }
+    .provider-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .provider-name{
+        margin-left: 10px;
+    }
+    
+    .chart-header{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        color: #0071bd;
+    }
+    .chart-title{
+        color: #0071bd !important;
+    }
+    .price-container{
+        display: flex !important;
+        gap: 20px !important;
+        align-items: center !important;
+        flex-wrap: wrap !important;
+    }
+    .price-change{
+        font-weight: 900 !important;
+    }
+    .current-price{
+        margin-top: 0px !important;
+        font-weight: 900 !important;
+    }
+    .home-heading-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .show-more{
+        margin-top: 0px !important;
+    }
+    .exchange-image{
+        margin: 0px 10px !important;
+    }
+    
+    .select-timeperiod{
+        width: 200px !important;
+        margin-top: 20px !important;
+    }
+    .news-card:hover,.crypto-card:hover{
+        background-color: rgb(61, 66, 104) !important;
+    }
+#checkbox,label{
+    display: none;
+}
+@media screen and (max-width: 760px) {
+    /* .Row{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    } */
+    .menu {
+            position: absolute;
+            flex-direction: column;
+            top: 60px !important;
+        right: 20px !important;
+            z-index: 10;
+            display: none !important;
+    }
+    #checkbox:checked ~ .menu{
+    display: flex !important;
+        transition: display 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    }
+    label{
+        display: flex;
+        margin: auto 0;
+
+    }
+   }
