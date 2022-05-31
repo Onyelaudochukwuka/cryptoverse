@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/cryptoverse/static/css/main.147408f1.css",
-    "main.js": "/cryptoverse/static/js/main.65d3f6c2.js",
+    "main.js": "/cryptoverse/static/js/main.2981c804.js",
     "index.html": "/cryptoverse/index.html",
     "main.147408f1.css.map": "/cryptoverse/static/css/main.147408f1.css.map",
-    "main.65d3f6c2.js.map": "/cryptoverse/static/js/main.65d3f6c2.js.map"
+    "main.2981c804.js.map": "/cryptoverse/static/js/main.2981c804.js.map"
   },
   "entrypoints": [
     "static/css/main.147408f1.css",
-    "static/js/main.65d3f6c2.js"
+    "static/js/main.2981c804.js"
   ]
 }
